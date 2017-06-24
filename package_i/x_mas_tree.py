@@ -41,4 +41,4 @@ def x_mas_tree(leaf_step, trunk_height):
 
     print(("W"*tree_base_width).center(tree_base_width))
     print(("Christmas season is just around the corner!").center(tree_base_width))
-    print("Tree size = %s" %tree_base_width,"!!!","\n\n")
+    print("Tree size = %s" %tree_base_width,"!!!","\n\n
