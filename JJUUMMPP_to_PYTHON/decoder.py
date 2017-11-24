@@ -56,7 +56,6 @@ def print_output(encoded_input):
 
 encoded_input = get_input_word(input_word)
 print_output(encoded_input)
-
 # 192810462840253485308
 # def input_phrase():
 #     pass

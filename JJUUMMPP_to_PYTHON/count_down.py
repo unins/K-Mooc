@@ -1,4 +1,7 @@
-import time, os
+import time, os, sys, io
+
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
 RUN_IMAGE = [
  '''
@@ -74,4 +77,5 @@ for m in range(len(RUN_IMAGE)):
         for x in range(len(RUN_IMAGE[-m-1])):
             print(RUN_IMAGE[-m-1][x].strip(),end="\t")
             print(RUN_IMAGE[-n-1][x].strip())
+            sys.stdout.flush()
         time.sleep(0.1)
