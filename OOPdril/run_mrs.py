@@ -3,10 +3,12 @@ morse = mc.get_morse_dict()
 sentence = "REQUEST ARTILLERY LINE 1 9 GRID LINE"
 encode = "..-. .-"
 
+
 def upper_case(sentence):
     sentence = sentence.upper()
     sentence = sentence.strip()
     return sentence
+
 
 def make_morse(sentence):
     sentence = upper_case(sentence)
@@ -21,6 +23,7 @@ def make_morse(sentence):
     print("Sentence = ", sentence)
     print("Decode = ", decode)
 
+
 def make_sentence(encode):
     decode = ""
     find_key = ''
@@ -28,7 +31,7 @@ def make_sentence(encode):
 
     arr_key = morse.keys()
     arr_value = morse.values()
-    arr_encode= encode.split()
+    arr_encode = encode.split()
 
     for n in range(len(arr_encode)):
         find_key = arr_encode[n]
@@ -40,10 +43,12 @@ def make_sentence(encode):
     print(encode)
     print(decode)
 
+
 def main():
     make_morse(sentence)
     print()
     make_sentence(encode)
+
 
 if __name__ == '__main__':
     main()
